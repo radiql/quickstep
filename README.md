@@ -26,7 +26,7 @@ QuickSteps can be deployed into web browsers, monolithic applications, microserv
 
 ## Design principles
 
-The the design principles of the QuickStep Framework are that:
+The design principles of the QuickStep Framework are that:
 
 - QuickSteps encapsulate simple User Stories. There is a one to one correspondence. 
 - Quickstep component inputs and outputs are defined as streamable data structures (Information Packets).
