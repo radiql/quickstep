@@ -14,7 +14,7 @@ User Stories are created and implemented by development teams using a traditiona
 User Stories are, in effect, lightweight Use Cases. The main difference between the two is that 
 
 1. Use Cases are usually designed in detail up front with inputs, outputs and various application flows (primary success flow and alternative and error flows) expressed as a series of related steps that need to be implemented.
-2. User Stories are usually expressed as a single sentence outline specification of behaviour and subsequently elaborated by by creating new User Stories and sub-tasks that need to be implemented one by one.
+2. User Stories are usually expressed as a single sentence outline specification of behaviour and subsequently elaborated by creating new User Stories and sub-tasks that need to be implemented one by one.
 
 ## Where RADiQL QuickStep fits in
 
