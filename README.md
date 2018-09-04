@@ -57,7 +57,7 @@ The design principles of the QuickStep Framework are that:
 
 In traditional old-fashioned Agile development, User Stories are implemented one by one with a collection of classes, functions, objects, schemas, APIs and a plethora of frameworks, libraries and technology decisions. The development team frames its thoughts in terms of the implementation technologies, available APIs and architecture already selected first and foremost rather than the pure functionality described by the User Stories and the flow of data that joins these User Stories together.
 
-## The cost of User Story re-implementation
+## The cost of User Story reimplementation
 
 An application is treated as a set of custom User Stories the like of which have never been seen before and that need to be developed from scratch within the context of some runtime environment or process (such as a microservice). A characteristic of this approach is that there is virtually no re-use of User Stories from application to application, nor from microservice to microservice. 
 
