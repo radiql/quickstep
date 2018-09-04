@@ -61,13 +61,13 @@ Prototyping is about reducing exposure to risk to days, hours or minutes rather 
 
 With re-implementation of common User Stories comes slower time to market and less complete Minimum Viable Products (MVPs). User Stories are typically implemented and re-implemented from scratch, burning time during both development and testing. Existing User Story implementations cannot easily be refactored. Where a User Story has been implemented in another language or technology, this often cannot be easily integrated into a new microservice of application due to imcompatibilities in the technologies.
 
-### Problems of User Story portability
+## Problems of User Story portability
 
 Switching from a monolithic application to a suite of microservices (or back again) becomes very complex because the implementations of User Stories are now no longer portable. Invocation of remotely hosted functionality (via HTTP web service calls protected by invasive circuit breaker implementation code such as Hystrix) looks very different to a local method call on another class running in the same process.
 
 This lack of portability is due to the very hard dependencies that have been built on languages, frameworks and database technologies as well as method and function signatures. It's also due to the interweaving of User Story implementations in the code. User Story implementations rapidly become interdependent and are woven together over time. In other words there is very high coupling between User Stories and, as a result, the code becomes brittle when trying to extract or refactor User Story functionality at a later date. 
 
-### Problems of poor documenation
+## Problems of poor documenation
 
 Agile is typically characterised by focussing on a low ceremony approach that minimises documentation during developement and where the code itself becomes the documentation. The theory goes that expert product-focussed teams will retain intimate knowledge of the code and retain an agile edge when being required to make changes. When microservice approaches are adopted, the theory goes that the smaller finer-grained microservices will be easier to understand (as well as more flexible to redeploy and upgrade). In practice though, things rarely work out quite like this and this is expecially true when measure over years.
 
@@ -79,9 +79,19 @@ Each User Story is broken up and distributed into artificial technical construct
 
 In a world where distributed systems are becoming the norm, relying on the code alone to document the implementation of User Stories (that may span multiple processes) is completely inadequate. 
 
-### Knowledge loss and high cost of maintenance
+## Knowledge loss and high cost of maintenance
 
 It's the lack of User Story portability that makes long term maintenance of applications and microservices expensive. Developers and technology managers eventually fear making changes to applications and microservices due to the high risk of introducing new defects through lack of understanding of how User Story implementations have been interwoven and due to the interdependencies that are now no-longer understood. JIRA and Git provide a degree of traceability, but the complexity of re-tracing the original development team's steps using using JIRA and Git makes separating User Story implementations effectively impossible. Furthermore the test impact is typically quite considerable.
 
 Staff turnover due to the modern reality of flexible resourcing and the wide variety of opportunities in the areas where development centres tend to be located (such as London, New York or the San Francisco area), along with the low-ceremony, low documentation of most Agile shops means that risk of introducing changes into an application or microservice 3 or 4 years down the line becomes very a very daunting prospect.
+
+## Wrong and inflexible granularity of deployment
+
+In addition to User Story implementations being split up into a number of components and services that may themselves be combined with other User Stories and therefore providing limited business agility, components and services are often deployed grouped together into a runtime process from the outset of development. Typically an Agile team will be responsible for one or more microservices in a microservice architecture and will therefore implement a User Story within the context of a particular microservice. As we've already discussed, this knock on effects of this for other consumers of the microservice is that remote and local code looks very different and therefore portability of the functionality (both from the client and the server perspectives) is badly compromised.
+
+However, this is a wider problem. Because the User Story implementions (that are distributed across multiple files in different application layers and possibly even different processes entirely in a distributed environment) collectively describe the business rules. This means that business rules cannot be easily and conveniently made available to third parties or third party products. The implications for government, for example, are that government business rules (such as tax calculations or complex data validation) need to be re-implemented by third party software vendors and organisations. Re-implementation implies a significant test impact and the necessity of some sort of government-provided test environment with which the correctness of the third party implementation can be tested. This incurs additonal cost for both parties both in terms of money and time.
+
+This is a wasteful use of resources and represents higher costs for the taxpayer and the consumer of the third party software. Furthermore, it restricts how much the state can offload the burden of software development onto the private sector. A knock-on effect is that it restricts competition and innovation in the private sector for this market.
+
+
 
