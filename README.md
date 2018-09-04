@@ -9,20 +9,22 @@ RADiQL QuickSteps are concrete implementations of User Stories that can be linke
 
 ## User Stories and Use Cases
 
-User Stories are created and implemented by development teams using a tradition Agile development methodology. At this point in time most developers, technical managers and business analysts are fully conversant with the now very familiar concept of User Stories. In this day and age, the development of computer applications is now almost always planned, tracked and controlled using User Stories and supporting tools such as Atlassian JIRA.
+User Stories are created and implemented by development teams using a traditional Agile development methodology. At this point in time, most developers, technical managers and business analysts are fully conversant with the now very familiar concept of User Stories. In this day and age, the development of computer applications is now almost always planned, tracked and controlled using User Stories and supporting tools such as Atlassian JIRA.
 
 User Stories are, in effect, lightweight Use Cases. The main difference between the two is that 
 
-1. Use Cases are usually designed in detail up front with inputs, outputs and various applications flows (primary success flow and alternative and error flows) expressed as a series of related steps that need to be implemented.
+1. Use Cases are usually designed in detail up front with inputs, outputs and various application flows (primary success flow and alternative and error flows) expressed as a series of related steps that need to be implemented.
 2. User Stories are usually expressed as a single sentence outline specification of behaviour and subsequently elaborated by by creating new User Stories and sub-tasks that need to be implemented one by one.
 
 ## Where RADiQL QuickStep fits in
 
-The RADiQL QuickStep Framework represents a revolutionary step forward in Agile development capability that we call Ultra Agile (UA).
+The RADiQL QuickStep Framework represents a revolutionary step forward in Agile development capability that we call Ultra Agile (UA). It builds upon the work of Ivar Jacobson, Robert C Martin, Paul Morrison and Henri Bergius.
 
-QuickSteps are used to enable ultra-agile development using visual tools and "lowcode" or "nocode" techniques. Using RADiQL QuickSteps, a business analyst, entrepreneur or application designer assembles an application as a network of User Stories rather than classes, functions, libraries and microservices. QuickSteps can be though of as re-usable User Story lightweight nanoservices that can easily be combined, composed and chained together into a one or more data flows.
+QuickSteps are used to enable ultra-agile development using visual tools and "lowcode" or "nocode" techniques. Using RADiQL QuickSteps, a business analyst, entrepreneur or application designer assembles an application as a network of User Stories rather than classes, functions, libraries and microservices. QuickSteps can be thought of as re-usable User Story lightweight nanoservices that can easily be combined, composed and chained together into a one or more data flows.
 
 QuickSteps can be deployed into web browsers, monolithic applications, microservices, serverless infrastructure or a combinaton thereof.
+
+## Design principles
 
 The the design principles of the QuickStep Framework are that:
 
