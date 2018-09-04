@@ -31,14 +31,14 @@ The design principles of the QuickStep Framework are that:
 - QuickSteps encapsulate simple User Stories. There is a one to one correspondence. 
 - Quickstep component inputs and outputs are defined as streamable data structures (Information Packets).
 - User interface technologies are treated as plugins. React and React Native are the default user interface technologies but are by no means the only technologies that will be supported. User interface frameworks may be substituted or combined as new frameworks and technologies are introduced.
-- Databases and data stores are treates as plugins. There is no direct dependence on SQL and NoSQL databases. User Stories are implemented entirely as QuickStep components or combination therefore and these is therefore no need to use supporting features of the database other than those provided by boundary interface components implemented as QuickStep components.
+- Databases and data stores are treated as plugins. There is no direct dependence on SQL and NoSQL databases. User Stories are implemented entirely as QuickStep components or combinations therefore and there is therefore no need to use supporting features of the database other than those provided by boundary interface components implemented as QuickStep components.
 - QuickSteps are reusable. QuickSteps can be reused many times within an application or across multiple applications.
 - QuickSteps are searchable. QuickSteps can be be published individually or together in a GitHub respository to be searched and indexed for use in visual tools.
 - QuickSteps can be strongly typed. The input and output ports of QuickSteps can be strongly typed to support automatic wiring together of QuickStep components or automated support for matching of QuickStep outputs and inputs for autocompletion of wiring within a visual tool.
 - QuickSteps are composable. QuickSteps can be built from and orchestrate other QuickSteps
 - QuickSteps are peers. QuickSteps can be chained together in a network to build functionality without any coding.
-- QuickSteps are self-documenting. QuickSteps are manipulated in a visual editor that explains their functionality, how they're used and the particular usage of a QuickStep component in the context of the current usage.
-- QuickSteps are compatible with a PolyGlot environment. QuickSteps can be implemented in any language and with any technology. The default supported languages are JavaScript, CoffeeScript, TypeScript, Java and Scala.
+- QuickSteps are self-documenting. QuickSteps are manipulated in a visual editor that explains their functionality, how they're used and the particular usage of a QuickStep component in the context of the current usage scenario.
+- QuickSteps are compatible with a Polyglot environment. QuickSteps can be implemented in any language and with any technology. The default supported languages are JavaScript, CoffeeScript, TypeScript, Java and Scala.
 - QuickSteps are compatible with GitHub. It's easy to find existing QuickStep components as well as to store new QuickStep components in GitHub.
 
 # Motivation for RADiQL QuickStep
