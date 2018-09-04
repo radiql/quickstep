@@ -30,7 +30,7 @@ The design principles of the QuickStep Framework are that:
 
 - QuickSteps encapsulate simple User Stories. There is a one to one correspondence. 
 - Quickstep component inputs and outputs are defined as streamable data structures (Information Packets).
-- User interface technologies are treated as plugins. React and React Native are the default user interface technologies but are by no means the only technologies that will be supported. User interface frameworks may be substituted or combined and new frameworks and technologies are introduced.
+- User interface technologies are treated as plugins. React and React Native are the default user interface technologies but are by no means the only technologies that will be supported. User interface frameworks may be substituted or combined and new frameworks as technologies are introduced.
 - Databases and data stores are treates as plugins. There is no direct dependence on SQL and NoSQL databases. User Stories are implemented entirely as QuickStep components or combination therefore and these is therefore no need to use supporting features of the database other than those provided by boundary interface components implemented as QuickStep components.
 - QuickSteps are reusable. QuickSteps can be reused many times within an application or across multiple applications.
 - QuickSteps are searchable. QuickSteps can be be published individually or together in a GitHub respository to be searched and indexed for use in visual tools.
