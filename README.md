@@ -1,11 +1,23 @@
 # quickstep
 Ultra Agile User Stories
 
+# RADiQL Core Principles
+
+The founding core principles of RADiQL are to provide superlative and unparalleled developer productivity and a joyful, accessible and playful development experience that drives innovation and entrepreneurialism at unmatched rates of product and service evolution. It's only through this approach will we be capable of meeting the demand for new software products and services in the future.
+
 # About RADiQL QuickStep
 
-RADiQL QuickSteps are designed to be composed using Flow Based Programming (FBE) and are a key elements in designing and building RADiQL applications. QuickSteps are designed according to Clean Architecture principles, the most important of which being that each QuickStep encapsulates and implements a re-usuable and re-composable User Story. 
+RADiQL QuickSteps are designed to be composed using Flow Based Programming (FBE) and are a key elements in designing and building RADiQL applications. QuickSteps are designed according to Clean Architecture principles, the most important of which being that each QuickStep encapsulates and implements a re-usuable and re-composable User Story. Key elements of Hexagonal Architecture have also been incorporated, namely that application logic is pure and separate from persistence mechanisms or user interace technology and that ports and adapters are a fundamental characteristic of each QuickStep component.
 
-RADiQL QuickSteps are concrete implementations of User Stories that can be linked together as a network of data flows to rapidly build most or all of a new application (or microservice or suite of microservices or a combination thereof) using a drag and drop visual tool.
+RADiQL QuickStep components are analagous to Borlands Visual Component Library (VCL) for Delphi in that they do the same for Flow Based Programming as the VCL did for structured programs written in ObjectPascal. Delphi pioneered Rapid Application Development (RAD) and Joint Application Development (JAD) for Client/Server enterprise software using "lowcode" and "nocode" technology, heavily supporting re-use through drag and drop visual components or module/application templates, multiple languages (ObjectPascal with assembly language optimisation within an Object Pascal source file) and support for multiple component technologies (VCL, OCX, VBX, COM, DCOM and CORBA/IIOP). The Visual Component Library contained both GUI components (text fields, buttons, menus, etc.) but also data components (SQL Tables, SQL Queries, SOAP Calls, SQL Stored Procedures, report generators, datasource components for master/slave relationships and so forth). Visual network components (HTTP, FTP, TCPIP client socket, TCPIP server socket and UDP components, for example) were also provided. Creating low-level TCP/IP or UDP applications required no coding, as did applications using FTP file transfers.
+
+In its day, Delphi was (and still is) an outstanding tool, though a very expensive one, for developer productivity. The reason for this was that the VCL was so well designed that it was possible to build most of an application without the need to resort to coding by hand. And furthermore the compiled software that was produced (the compiler being shared with C++ products from the same company) was of enterprise quality. Delphi Entprise made it possible to build robust production-quality data-driven multi-tier pplications with the ease of Visual Basic, with less code than VB yet with the performance, maintainability and flexibility of C++. 
+
+After a decade of cheap or free software development tooling, Delphi still retails for over $5,000 per developer seat in its more expensive version and remains one of the best kept secrets in the software development world.
+
+Though very different to Delphi, RADiQL is inspired by Delphi's focus on developer productivity and producing high quality results virtually instantly, with the design-time environment able to work with live data from real APIs even before the compile, build and deployment steps.
+
+RADiQL QuickSteps are concrete implementations of User Stories that can be linked together as a network of data flows to rapidly build most or all of a new application (or microservice or suite of microservices or a combination thereof) using a drag and drop visual tool. Like Delphi's VCL components, RADiQL QuickStep components allow business analysts and designers to work with live data (be it from a test or production environment) whilst building complex enterprise-class distributed applications, leaving custom coding to development teams only where necessary.
 
 ## User Stories and Use Cases
 
@@ -18,7 +30,7 @@ User Stories are, in effect, lightweight Use Cases. The main difference between 
 
 ## Where RADiQL QuickStep fits in
 
-The RADiQL QuickStep Framework represents a revolutionary step forward in Agile development capability that we call Ultra Agile (UA). It builds upon the work of Ivar Jacobson, Robert C Martin, Paul Morrison and Henri Bergius.
+The RADiQL QuickStep Framework represents a revolutionary step forward in Agile development capability that we call Ultra Agile (UA). It builds upon the work of Ivar Jacobson, Alistair Cockburn, Robert C Martin, Paul Morrison and Henri Bergius.
 
 QuickSteps are used to enable ultra-agile development using visual tools and "lowcode" or "nocode" techniques. Using RADiQL QuickSteps, a business analyst, entrepreneur or application designer assembles an application as a network of User Stories rather than classes, functions, libraries and microservices. QuickSteps can be thought of as re-usable User Story lightweight nanoservices that can easily be combined, composed and chained together into a one or more data flows.
 
