@@ -5,6 +5,11 @@ Ultra Agile User Stories
 
 [Inflexible Granularity](./docs/motivations.md#inflexible-granularity)
 
+[RADiQL Core Principles][]
+[About RADiQL QuickStep][]
+[Prior art: RAD and JAD tooling][]
+[Focus on productivity: User Stories as component][]
+[User Stories and Use Cases][]
 
 # RADiQL Core Principles
 
@@ -140,5 +145,9 @@ However, this is a wider problem. Because the User Story implementions (that are
 
 This is a wasteful use of resources and represents higher costs for the taxpayer and the consumer of the third party software. Furthermore, it restricts how much the state can offload the burden of software development onto the private sector. A knock-on effect is that it restricts competition and innovation in the private sector for this market.
 
-
+[RADiQL Core Principles][]
+[About RADiQL QuickStep][]
+[Prior art: RAD and JAD tooling][]
+[Focus on productivity: User Stories as component][]
+[User Stories and Use Cases][]
 
