@@ -5,7 +5,7 @@ Ultra Agile User Stories
 
 [Inflexible Granularity](./docs/motivations.md#inflexible-granularity)
 
-[RADiQL Core Principles][]
+[RADiQL Core Principles]()
 [About RADiQL QuickStep][]
 [Prior art: RAD and JAD tooling][]
 [Focus on productivity: User Stories as component][]
