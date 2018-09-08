@@ -6,11 +6,12 @@ Ultra Agile User Stories
 - [Inflexible Granularity](./docs/motivations.md#inflexible-granularity)
 - [Something](./docs/motivations.md#the-cost-of-user-story-reimplementation)
 
-- [RADiQL Core Principles](#RADiQL-Core-Principles)
-- [About RADiQL QuickStep](#About-RADiQL-QuickStep)
-- [Prior art: RAD and JAD tooling](#Prior-art:-RAD-and-JAD-tooling)
-- [Focus on productivity: User Stories as component][]
-- [User Stories and Use Cases][]
+- [RADiQL Core Principles](#radiql-core-principles)
+- [About RADiQL QuickStep](#about-radiql-quickstep)
+- [Prior art: RAD and JAD tooling](#prior-art-rad-and-jad-tooling)
+- [Focus on productivity: User Stories as components](#focus-on-productivity-user-stories-as-components)
+- [User Stories and Use Cases](#user-stories-and-use-cases)
+
 
 # RADiQL Core Principles
 
@@ -149,6 +150,6 @@ This is a wasteful use of resources and represents higher costs for the taxpayer
 - [RADiQL Core Principles](#radiql-core-principles)
 - [About RADiQL QuickStep](#about-radiql-quickstep)
 - [Prior art: RAD and JAD tooling](#prior-art-rad-and-jad-tooling)
-- [Focus on productivity: User Stories as components][focus-on-productivity-user-stories-as-components]
-- [User Stories and Use Cases][]
+- [Focus on productivity: User Stories as components](#focus-on-productivity-user-stories-as-components)
+- [User Stories and Use Cases](#user-stories-and-use-cases)
 
