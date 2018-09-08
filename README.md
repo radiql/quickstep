@@ -32,7 +32,7 @@ User Stories are, in effect, lightweight Use Cases. The main difference between 
 1. Use Cases are usually designed in detail up front with inputs, outputs and various application flows (primary success flow and alternative and error flows) expressed as a series of related steps that need to be implemented.
 2. User Stories are usually expressed as a single sentence outline specification of behaviour and subsequently elaborated by creating new User Stories and sub-tasks that need to be implemented one by one.
 
-## Where RADiQL QuickStep fits in
+## RADiQL QuickStep and Ultra Agile
 
 The RADiQL QuickStep Framework represents a revolutionary step forward in Agile development capability that we call Ultra Agile (UA). It builds upon the work of Ivar Jacobson, Alistair Cockburn, Robert C Martin, Paul Morrison and Henri Bergius.
 
