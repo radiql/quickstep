@@ -5,13 +5,13 @@ Ultra Agile User Stories
 
 [Inflexible Granularity](./docs/motivations.md#inflexible-granularity)
 
-[RADiQL Core Principles][CorePrincipals]
+[RADiQL Core Principles](#RADiQL-Core-Principles)
 [About RADiQL QuickStep][]
 [Prior art: RAD and JAD tooling][]
 [Focus on productivity: User Stories as component][]
 [User Stories and Use Cases][]
 
-# RADiQL Core Principles [CorePrincipals]
+# RADiQL Core Principles
 
 The founding core principles of RADiQL are to provide superlative and unparalleled developer productivity and a joyful, accessible and playful development experience that drives innovation and entrepreneurialism at unmatched rates of product and service evolution. It's only through this approach will we be capable of meeting the demand for new software products and services in the future.
 
