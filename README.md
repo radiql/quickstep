@@ -1,6 +1,11 @@
 # quickstep
 Ultra Agile User Stories
 
+# Contents
+
+[Inflexible Granularity](./docs/motivations.md#inflexible-granularity)
+
+
 # RADiQL Core Principles
 
 The founding core principles of RADiQL are to provide superlative and unparalleled developer productivity and a joyful, accessible and playful development experience that drives innovation and entrepreneurialism at unmatched rates of product and service evolution. It's only through this approach will we be capable of meeting the demand for new software products and services in the future.
