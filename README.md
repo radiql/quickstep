@@ -54,7 +54,7 @@ The design principles of the QuickStep Framework are that:
 - QuickSteps are composable. QuickSteps can be built from and orchestrate other QuickSteps
 - QuickSteps are peers. QuickSteps can be chained together in a network to build functionality without any coding.
 - QuickSteps are self-documenting. QuickSteps are manipulated in a visual editor that explains their functionality, how they're used and the particular usage of a QuickStep component in the context of the current usage scenario.
-- QuickSteps are compatible with a Polyglot environment. QuickSteps can be implemented in any language and with any technology. The default supported languages are JavaScript, CoffeeScript, TypeScript for single-threaded processes based upon the web browser and NodeJS and Go (Golang) for compiled and robust multi-threaded compute-intensive highly concurrent and parallelized processess. 
+- QuickSteps are compatible with a Polyglot environment. QuickSteps can be implemented in any language and with any technology. The default supported languages are JavaScript, CoffeeScript and TypeScript for single-threaded processes based upon the web browser and NodeJS and Go (Golang) for compiled and robust multi-threaded compute-intensive highly concurrent and parallelized processess. 
 - QuickSteps are compatible with GitHub. It's easy to find existing QuickStep components as well as to store new QuickStep components in GitHub.
 
 # Motivation for RADiQL QuickStep
