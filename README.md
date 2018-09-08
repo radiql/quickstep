@@ -3,7 +3,8 @@ Ultra Agile User Stories
 
 # Contents
 
-[Inflexible Granularity](./docs/motivations.md#inflexible-granularity)
+- [Inflexible Granularity](./docs/motivations.md#inflexible-granularity)
+- [Something](./docs/motivations.md#the-cost-of-user-story-reimplementation)
 
 - [RADiQL Core Principles](#RADiQL-Core-Principles)
 - [About RADiQL QuickStep](#About-RADiQL-QuickStep)
@@ -27,7 +28,7 @@ In its day, Delphi was (and still is) an outstanding tool, though a very expensi
 
 After a decade of cheap or free software development tooling, Delphi still retails for over $5,000 per developer seat in its more expensive version and remains one of the best kept secrets in the software development world.
 
-## Focus on productivity: User Stories as component
+## Focus on productivity: User Stories as components
 
 Though very different to Delphi, RADiQL is inspired by Delphi's focus on developer productivity and producing high quality results virtually instantly, with the design-time environment able to work with live data from real APIs even before the compile, build and deployment steps.
 
@@ -146,8 +147,8 @@ However, this is a wider problem. Because the User Story implementions (that are
 This is a wasteful use of resources and represents higher costs for the taxpayer and the consumer of the third party software. Furthermore, it restricts how much the state can offload the burden of software development onto the private sector. A knock-on effect is that it restricts competition and innovation in the private sector for this market.
 
 - [RADiQL Core Principles](#radiql-core-principles)
-- [About RADiQL QuickStep](#About-RADiQL-QuickStep)
-- [Prior art: RAD and JAD tooling](#Prior-art:-RAD-and-JAD-tooling)
-- [Focus on productivity: User Stories as component][]
+- [About RADiQL QuickStep](#about-radiql-quickstep)
+- [Prior art: RAD and JAD tooling](#prior-art-rad-and-jad-tooling)
+- [Focus on productivity: User Stories as components][focus-on-productivity-user-stories-as-components]
 - [User Stories and Use Cases][]
 
