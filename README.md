@@ -17,7 +17,7 @@ In its day, Delphi was (and still is) an outstanding tool, though a very expensi
 
 After a decade of cheap or free software development tooling, Delphi still retails for over $5,000 per developer seat in its more expensive version and remains one of the best kept secrets in the software development world.
 
-## Focus on productivity: user story or use case as a component
+## Focus on productivity: User Stories as component
 
 Though very different to Delphi, RADiQL is inspired by Delphi's focus on developer productivity and producing high quality results virtually instantly, with the design-time environment able to work with live data from real APIs even before the compile, build and deployment steps.
 
