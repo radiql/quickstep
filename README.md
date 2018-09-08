@@ -6,11 +6,13 @@ Ultra Agile User Stories
 - [Inflexible Granularity](./docs/motivations.md#inflexible-granularity)
 - [Something](./docs/motivations.md#the-cost-of-user-story-reimplementation)
 
+
+
 1. [RADiQL Core Principles](#radiql-core-principles)
 2. [About RADiQL QuickStep](#about-radiql-quickstep)
-  - [Prior art: RAD and JAD tooling](#prior-art-rad-and-jad-tooling)
-  - [Focus on productivity: User Stories as components](#focus-on-productivity-user-stories-as-components)
-  - [User Stories and Use Cases](#user-stories-and-use-cases)
+   - [Prior art: RAD and JAD tooling](#prior-art-rad-and-jad-tooling)
+   - [Focus on productivity: User Stories as components](#focus-on-productivity-user-stories-as-components)
+   - [User Stories and Use Cases](#user-stories-and-use-cases)
 
 
 # RADiQL Core Principles
