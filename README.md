@@ -13,7 +13,7 @@ Ultra Agile User Stories
    * [Prior art: RAD and JAD tooling](#prior-art-rad-and-jad-tooling)
    * [Focus on productivity: User Stories as components](#focus-on-productivity-user-stories-as-components)
    * [User Stories and Use Cases](#user-stories-and-use-cases)
-3. [Motivation for RADiQL QuickStep](#motivation-for-radiql-quickStep)
+3. [Motivation for RADiQL QuickStep](#motivation-for-radiql-quickstep)
 
 # RADiQL Core Principles
 
@@ -75,7 +75,7 @@ The design principles of the QuickStep Framework are that:
 
 In traditional old-fashioned Agile development, User Stories are implemented one by one with a collection of classes, functions, objects, schemas, APIs and a plethora of frameworks, libraries and technology decisions. The development team frames its thoughts in terms of the implementation technologies, available APIs and architecture already selected first and foremost rather than the pure functionality described by the User Stories and the flow of data that joins these User Stories together.
 
-This approach has several drawbacks. Click on the links below for more details.
+This approach has many drawbacks. Click on the links below for more details.
 
 1. [The cost of User Story reimplementation](./docs/motivations.md#the-cost-of-user-story-reimplementation)
 2. [Suboptimal risk management with no prototyping](./docs/motivations.md#suboptimal-risk-management-with-no-prototyping)
@@ -84,34 +84,7 @@ This approach has several drawbacks. Click on the links below for more details.
 5. [Slow time to market](./docs/motivations.md#slow-time-to-market)
 6. [Problems of User Story portability](./docs/motivations.md#problems-of-user-story-portability)
 7. [Problems of poor documenation](./docs/motivations.md#problems-of-poor-documentation)
+8. [Knowledge loss and high cost of maintenance](./docs/motivations.md#knowledge-loss-and-high-cost-of-maintenance)
+9. [Wrong and inflexible granularity of deployment](./docs/motivations.md#wrong-and-inflexible-granularity-of-deployment)
 
-Agile is typically characterised by focussing on a low ceremony approach that minimises documentation during developement and where the code itself becomes the documentation. The theory goes that expert product-focussed teams will retain intimate knowledge of the code and retain an agile edge when being required to make changes. When microservice approaches are adopted, the theory goes that the smaller finer-grained microservices will be easier to understand (as well as more flexible to redeploy and upgrade). In practice though, things rarely work out quite like this and this is expecially true when measure over years.
-
-The result is that functionality, which was originally driven by documented user stories, is now all mixed up and baked into an application or microservice. The relationship between microservices and the multiple applications that may use them is not well understood either. And virtually none of these interdependencies will be documented. And even if they are at the outset, it's unlikely that this will be true in the long term.
-
-With regard to self-documented code, the very directory structure of an application or microservice will be dominated by directories or folders with names like "controller", "view", "model", "helpers", "services", "persistance" and so on and so forth. A glance through the directory structure, package names or module names rarely, if ever, tells the story of what the application or microservice is actually doing (and how). 
-
-Each User Story is broken up and distributed into artificial technical constructs dictated by convention (for a particular, language, technology or framework) or by design pattern. The User Story is no longer documented effectively in the code because the story has been sliced and diced and distributed across multiple files and possibly translated into several programming languages. The User Story itself and the correctness of its implementation is therefore very difficult to follow by reading the code. The code may document itself by telling us what its doing and how. But it rarely, if ever, tells us why its doing this, why its organised in that way and what interdepencies exist with other functionality in the same process and with other functionality in remote processes.
-
-In a world where distributed systems are becoming the norm, relying on the code alone to document the implementation of User Stories (that may span multiple processes) is completely inadequate. 
-
-## Knowledge loss and high cost of maintenance
-
-It's the lack of User Story portability that makes long term maintenance of applications and microservices expensive. Developers and technology managers eventually fear making changes to applications and microservices due to the high risk of introducing new defects through lack of understanding of how User Story implementations have been interwoven and due to the interdependencies that are now no-longer understood. JIRA and Git provide a degree of traceability, but the complexity of re-tracing the original development team's steps using using JIRA and Git makes separating User Story implementations effectively impossible. Furthermore the test impact is typically quite considerable.
-
-Staff turnover due to the modern reality of flexible resourcing and the wide variety of opportunities in the areas where development centres tend to be located (such as London, New York or the San Francisco area), along with the low-ceremony, low documentation of most Agile shops means that risk of introducing changes into an application or microservice 3 or 4 years down the line becomes very a very daunting prospect.
-
-## Wrong and inflexible granularity of deployment
-
-In addition to User Story implementations being split up into a number of components and services that may themselves be combined with other User Stories and therefore providing limited business agility, components and services are often deployed grouped together into a runtime process from the outset of development. Typically an Agile team will be responsible for one or more microservices in a microservice architecture and will therefore implement a User Story within the context of a particular microservice. As we've already discussed, this knock on effects of this for other consumers of the microservice is that remote and local code looks very different and therefore portability of the functionality (both from the client and the server perspectives) is badly compromised.
-
-However, this is a wider problem. Because the User Story implementions (that are distributed across multiple files in different application layers and possibly even different processes entirely in a distributed environment) collectively describe the business rules. This means that business rules cannot be easily and conveniently made available to third parties or third party products. The implications for government, for example, are that government business rules (such as tax calculations or complex data validation) need to be re-implemented by third party software vendors and organisations. Re-implementation implies a significant test impact and the necessity of some sort of government-provided test environment with which the correctness of the third party implementation can be tested. This incurs additonal cost for both parties both in terms of money and time.
-
-This is a wasteful use of resources and represents higher costs for the taxpayer and the consumer of the third party software. Furthermore, it restricts how much the state can offload the burden of software development onto the private sector. A knock-on effect is that it restricts competition and innovation in the private sector for this market.
-
-- [RADiQL Core Principles](#radiql-core-principles)
-- [About RADiQL QuickStep](#about-radiql-quickstep)
-- [Prior art: RAD and JAD tooling](#prior-art-rad-and-jad-tooling)
-- [Focus on productivity: User Stories as components](#focus-on-productivity-user-stories-as-components)
-- [User Stories and Use Cases](#user-stories-and-use-cases)
 
