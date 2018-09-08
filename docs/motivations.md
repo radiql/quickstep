@@ -68,7 +68,7 @@ It's the lack of User Story portability that makes long term maintenance of appl
 
 Staff turnover due to the modern reality of flexible resourcing and the wide variety of opportunities in the areas where development centres tend to be located (such as London, New York or the San Francisco area), along with the low-ceremony, low documentation of most Agile shops means that risk of introducing changes into an application or microservice 3 or 4 years down the line becomes very a very daunting prospect.
 
-## <a name="inflexible-granularity"/>Wrong and inflexible granularity of deployment
+## Wrong and inflexible granularity of deployment
 
 In addition to User Story implementations being split up into a number of components and services that may themselves be combined with other User Stories and therefore providing limited business agility, components and services are often deployed grouped together into a runtime process from the outset of development. Typically an Agile team will be responsible for one or more microservices in a microservice architecture and will therefore implement a User Story within the context of a particular microservice. As we've already discussed, this knock on effects of this for other consumers of the microservice is that remote and local code looks very different and therefore portability of the functionality (both from the client and the server perspectives) is badly compromised.
 
