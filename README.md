@@ -1,12 +1,7 @@
 # quickstep
-Ultra Agile User Stories
+An Ultra Agile framework to shorten the path from User Stories to working software
 
 # Contents
-
-- [Inflexible Granularity](./docs/motivations.md#inflexible-granularity)
-- [Something](./docs/motivations.md#the-cost-of-user-story-reimplementation)
-
-
 
 1. [RADiQL Overview](#radiql-overview)
 2. [About RADiQL QuickStep](#about-radiql-quickstep)
