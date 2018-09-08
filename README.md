@@ -8,14 +8,16 @@ Ultra Agile User Stories
 
 
 
-1. [RADiQL Core Principles](#radiql-core-principles)
+1. [RADiQL Overview](#radiql-overview)
 2. [About RADiQL QuickStep](#about-radiql-quickstep)
    * [Prior art: RAD and JAD tooling](#prior-art-rad-and-jad-tooling)
    * [Focus on productivity: User Stories as components](#focus-on-productivity-user-stories-as-components)
    * [User Stories and Use Cases](#user-stories-and-use-cases)
+   * [RADiQL QuickStep and Ultra Agile](#radiql-quickstep-and-ultra-agile)
+   * [Design principles](#design-principles)
 3. [Motivation for RADiQL QuickStep](#motivation-for-radiql-quickstep)
 
-# RADiQL Core Principles
+# RADiQL Overview
 
 The founding core principles of RADiQL are to provide superlative and unparalleled developer productivity and a joyful, accessible and playful development experience that drives innovation and entrepreneurialism at unmatched rates of product and service evolution. It's only through this approach will we be capable of meeting the demand for new software products and services in the future.
 
