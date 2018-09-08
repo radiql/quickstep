@@ -50,7 +50,7 @@ Switching from a monolithic application to a suite of microservices (or back aga
 
 This lack of portability is due to the very hard dependencies that have been built on languages, frameworks and database technologies as well as method and function signatures. It's also due to the interweaving of User Story implementations in the code. User Story implementations rapidly become interdependent and are woven together over time. In other words there is very high coupling between User Stories and, as a result, the code becomes brittle when trying to extract or refactor User Story functionality at a later date. 
 
-## Problems of poor documenation
+## Problems of poor documentation
 
 Agile is typically characterised by focussing on a low ceremony approach that minimises documentation during developement and where the code itself becomes the documentation. The theory goes that expert product-focussed teams will retain intimate knowledge of the code and retain an agile edge when being required to make changes. When microservice approaches are adopted, the theory goes that the smaller finer-grained microservices will be easier to understand (as well as more flexible to redeploy and upgrade). In practice though, things rarely work out quite like this and this is expecially true when measure over years.
 
