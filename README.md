@@ -16,7 +16,7 @@ An Ultra Agile framework to shorten the path from User Stories to working softwa
 
 The founding core principles of RADiQL are to provide superlative and unparalleled software development productivity and a joyful, accessible and playful development experience that drives innovation and entrepreneurialism at unmatched rates of product and service evolution. It's only through this approach will we be capable of meeting the demand for new software products and services in the future.
 
-RADiQL QuickStep permits User Stories to be created created from templates and linked together by data flows. This graph of User STories is then directly converted into working software and deployed as a monolithic application or a set of collaborating microservices or a hybrid of the two. 
+RADiQL QuickStep permits User Stories to be created from templates and linked together by data flows. This graph of User STories is then directly converted into working software and deployed as a monolithic application or a set of collaborating microservices or a hybrid of the two. 
 
 # About RADiQL QuickStep
 
