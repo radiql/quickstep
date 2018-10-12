@@ -20,7 +20,7 @@ RADiQL QuickStep permits User Stories to be created from templates and linked to
 
 # About RADiQL QuickStep
 
-RADiQL QuickSteps are designed to be composed using Flow Based Programming (FBE) and are a key elements in designing and building RADiQL applications. QuickSteps are designed according to Clean Architecture principles, the most important of which being that each QuickStep encapsulates and implements a re-usuable and re-composable User Story. Key elements of Hexagonal Architecture have also been incorporated, namely that application logic is pure and separate from persistence mechanisms or user interace technology and that ports and adapters are a fundamental characteristic of each QuickStep component.
+RADiQL QuickSteps are designed to be composed using the principles of Flow Based Programming (FBE) and are a key elements in designing and building RADiQL applications. QuickSteps are designed according to Clean Architecture principles, the most important of which being that each QuickStep encapsulates and implements a re-usuable and re-composable User Story. Key elements of Hexagonal Architecture have also been incorporated, namely that application logic is pure and separate from persistence mechanisms or user interace technology and that ports and adapters are a fundamental characteristic of each QuickStep component.
 
 ## Prior art: RAD and JAD tooling
 
@@ -51,7 +51,23 @@ User Stories are, in effect, lightweight Use Cases. The main difference between 
 
 It's important to understand that each step in a User Story or Use Case is, in itself, an event. The sequence of these events produce a change in state of some sort, either in terms of what's shown on a display screen, the data that records the outcome of this sequence of events, a physical change to the world that's been completed or that is on-going or some combination of these.
 
-By describing steps, User Stories and Use Cases document how these changes of state occur through a sequence of events. Viewed in this lights, User Stories and Use Cases are descriptions of event processors.
+By describing steps, User Stories and Use Cases document how these changes of state occur through a sequence of events. Viewed in this lights, User Stories and Use Cases are descriptions of event processors. Each event can be described in natural language but can also be modelled as a data structure. User Stories and Use Cases can be though of as being linked together by a stream of event data structures passing between them. RADiQL QuickSteps that implement User Stories, accept streams of event data structures as inputs, process these events and optionally create or pass through data structures as their outputs.
+
+QuickStep components can have multiple inputs and multiple output and process multiple different types of event data structures. And this is natural because this process is exactly what Use Cases and User Stories really describe. 
+
+## Event Sourcing
+
+The principle of Event Sourcing is about persisting state as a sequence of state-changing events. Events are persisted in an event store of some sort which behaves as a database of events. The state of an entity can therefore be reconstructed from the events that describe interactions with that entity. While this may sound strange at first (and somewhat risky compared with using ACID transactions using a relation database such as Oracle) you should note that this is exactly how data replication and commit logs work in databases like Oracle. So in a way Event Sourcing underpins the technology that we've used for decades.
+
+What relational databases such as Oracle do is to reconstruct state from events into tables. An in practive Event Sourcing systems do much the same sort of thing, periodically creating snapshots of state in order to improve performance. Each snapshot can be thought of as a savepoint (or bookmark of state) in the stream of events. Rather than reconstruct state from the dawn of time, therefore, it's possible just to reference the last and most recent snapshot and reconstruct state using the events that have occurred since that snapshot was taken.
+
+The benefits of Event Sourcing are as follows:
+
+1. Event Sourcing is a natural fit for event-driven architectures, which are in themselves extremely scalable.
+2. There is no object/relational mismatch that is so common in conventional enterprise applications. We deal with snapshots of raw data and events that desribe mutations to that raw data. So we don't need to translate between relational SQL and data structures (such as objects) in languages like Java, Scala or C#. That problem simply goes away.
+3. Event Sourcing inherently creates an audit log of mutations in the form of events that are persisted in the event store.
+4. It's possible to "time travel" backwards and forwards in the event stream to reconstruct state at an earlier point in time.
+5. Applications built with Event Sourcing can be assembled from components that are loosely-coupled (being coupled only by the pure data that logically connects them) rather than any particular API or transport mechanism. This means that it's much easier to build applications based upon microservices and serverless platforms, bringing cost-benefits and flexible scalability.
 
 ## RADiQL QuickStep and Ultra Agile
 
