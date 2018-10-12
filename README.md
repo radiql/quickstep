@@ -9,6 +9,8 @@ An Ultra Agile framework to shorten the path from User Stories to working softwa
    * [Focus on productivity: User Stories as components](#focus-on-productivity-user-stories-as-components)
    * [User Stories and Use Cases](#user-stories-and-use-cases)
    * [User Stories, Use Cases and Events](#user-stories-use-cases-and-events)
+   * [Event Sourcing for data](#event-sourcing-for-data)
+   * [Event Sourcing and scalability](#event-sourcing-and-scalability)
    * [RADiQL QuickStep and Ultra Agile](#radiql-quickstep-and-ultra-agile)
    * [Design principles](#design-principles)
 3. [Motivation for RADiQL QuickStep](#motivation-for-radiql-quickstep)
