@@ -4,7 +4,8 @@ An Ultra Agile framework to shorten the path from User Stories to working softwa
 # Contents
 
 1. [RADiQL Overview](#radiql-overview)
-2. [About RADiQL QuickStep](#about-radiql-quickstep)
+2. [Motivation for RADiQL QuickStep](#motivation-for-radiql-quickstep)
+3. [About RADiQL QuickStep](#about-radiql-quickstep)
    * [Prior art: RAD and JAD tooling](#prior-art-rad-and-jad-tooling)
    * [Focus on productivity: User Stories as components](#focus-on-productivity-user-stories-as-components)
    * [User Stories and Use Cases](#user-stories-and-use-cases)
@@ -12,14 +13,32 @@ An Ultra Agile framework to shorten the path from User Stories to working softwa
    * [Event Sourcing for data](#event-sourcing-for-data)
    * [Event Sourcing and scalability](#event-sourcing-and-scalability)
    * [RADiQL QuickStep and Ultra Agile](#radiql-quickstep-and-ultra-agile)
-   * [Design principles](#design-principles)
-3. [Motivation for RADiQL QuickStep](#motivation-for-radiql-quickstep)
+4. [Design principles](#design-principles)
+ 
 
 # RADiQL Overview
 
 The founding core principles of RADiQL are to provide superlative and unparalleled software development productivity and a joyful, accessible and playful development experience that drives innovation and entrepreneurialism at unmatched rates of product and service evolution. It's only through this approach will we be capable of meeting the demand for new software products and services in the future.
 
-RADiQL QuickStep permits User Stories to be created from templates and linked together by data flows. This graph of User STories is then directly converted into working software and deployed as a monolithic application or a set of collaborating microservices or a hybrid of the two. 
+RADiQL QuickStep permits User Stories to be created from QuickStep templates or selected from QuickStep components and linked together by events and data flows. This graph of User Stories is then directly converted into working software and deployed as a monolithic application or a set of collaborating microservices or a hybrid of the two. 
+
+
+# Motivation for RADiQL QuickStep
+
+In traditional old-fashioned Agile development, User Stories are implemented one by one with a collection of classes, functions, objects, schemas, APIs and a plethora of frameworks, libraries and technology decisions. The development team frames its thoughts in terms of the implementation technologies, available APIs and architecture already selected first and foremost rather than the pure functionality described by the User Stories and the flow of data that joins these User Stories together.
+
+This approach has many drawbacks. Click on the links below for more details.
+
+1. [The cost of User Story reimplementation](./docs/motivations.md#the-cost-of-user-story-reimplementation)
+2. [Suboptimal risk management with no prototyping](./docs/motivations.md#suboptimal-risk-management-with-no-prototyping)
+3. [Too much code and excessive test impact](./docs/motivations.md#too-much-code-and-excessive-test-impact)
+4. [Data Monitoring and Separation of Concerns](./docs/motivations.md#data-monitoring-and-separation-of-concerns)
+5. [Slow time to market](./docs/motivations.md#slow-time-to-market)
+6. [Problems of User Story portability](./docs/motivations.md#problems-of-user-story-portability)
+7. [Problems of poor documenation](./docs/motivations.md#problems-of-poor-documentation)
+8. [Knowledge loss and high cost of maintenance](./docs/motivations.md#knowledge-loss-and-high-cost-of-maintenance)
+9. [Wrong and inflexible granularity of deployment](./docs/motivations.md#wrong-and-inflexible-granularity-of-deployment)
+
 
 # About RADiQL QuickStep
 
@@ -114,20 +133,5 @@ The design principles of the QuickStep Framework are that:
 - QuickSteps are compatible with a Polyglot environment. QuickSteps can be implemented in any language and with any technology. The default supported languages are JavaScript, CoffeeScript and TypeScript for single-threaded processes based upon the web browser and NodeJS and Go (Golang) for compiled and robust multi-threaded compute-intensive highly concurrent and parallelized processess. 
 - QuickSteps are compatible with GitHub. It's easy to find existing QuickStep components as well as to store new QuickStep components in GitHub.
 
-# Motivation for RADiQL QuickStep
-
-In traditional old-fashioned Agile development, User Stories are implemented one by one with a collection of classes, functions, objects, schemas, APIs and a plethora of frameworks, libraries and technology decisions. The development team frames its thoughts in terms of the implementation technologies, available APIs and architecture already selected first and foremost rather than the pure functionality described by the User Stories and the flow of data that joins these User Stories together.
-
-This approach has many drawbacks. Click on the links below for more details.
-
-1. [The cost of User Story reimplementation](./docs/motivations.md#the-cost-of-user-story-reimplementation)
-2. [Suboptimal risk management with no prototyping](./docs/motivations.md#suboptimal-risk-management-with-no-prototyping)
-3. [Too much code and excessive test impact](./docs/motivations.md#too-much-code-and-excessive-test-impact)
-4. [Data Monitoring and Separation of Concerns](./docs/motivations.md#data-monitoring-and-separation-of-concerns)
-5. [Slow time to market](./docs/motivations.md#slow-time-to-market)
-6. [Problems of User Story portability](./docs/motivations.md#problems-of-user-story-portability)
-7. [Problems of poor documenation](./docs/motivations.md#problems-of-poor-documentation)
-8. [Knowledge loss and high cost of maintenance](./docs/motivations.md#knowledge-loss-and-high-cost-of-maintenance)
-9. [Wrong and inflexible granularity of deployment](./docs/motivations.md#wrong-and-inflexible-granularity-of-deployment)
 
 
