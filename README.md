@@ -20,7 +20,7 @@ RADiQL QuickStep permits User Stories to be created from templates and linked to
 
 # About RADiQL QuickStep
 
-RADiQL QuickSteps are designed to be composed using the principles of Flow Based Programming (FBE) and are a key elements in designing and building RADiQL applications. QuickSteps are designed according to Clean Architecture principles, the most important of which being that each QuickStep encapsulates and implements a re-usuable and re-composable User Story. Key elements of Hexagonal Architecture have also been incorporated, namely that application logic is pure and separate from persistence mechanisms or user interace technology and that ports and adapters are a fundamental characteristic of each QuickStep component.
+RADiQL QuickSteps are designed to be composed using the principles of Flow Based Programming (FBE) and are a key elements in designing and building RADiQL applications. QuickSteps are designed according to Clean Architecture principles, the most important of which being that each QuickStep encapsulates and implements a re-usuable and re-composable User Story. Key elements of Hexagonal Architecture have also been incorporated, namely that application logic is pure and separate from persistence mechanisms or user interace technology and that ports and adapters are a fundamental characteristic of each QuickStep component. Finally, Event Sourcing is used as a technique for passing data between QuickStep components and for persistence of data.
 
 ## Prior art: RAD and JAD tooling
 
@@ -55,7 +55,7 @@ By describing steps, User Stories and Use Cases document how these changes of st
 
 QuickStep components can have multiple inputs and multiple output and process multiple different types of event data structures. And this is natural because this process is exactly what Use Cases and User Stories really describe. 
 
-## Event Sourcing
+## Event Sourcing for data
 
 The principle of Event Sourcing is about persisting state as a sequence of state-changing events. Events are persisted in an event store of some sort which behaves as a database of events. The state of an entity can therefore be reconstructed from the events that describe interactions with that entity. While this may sound strange at first (and somewhat risky compared with using ACID transactions using a relation database such as Oracle) you should note that this is exactly how data replication and commit logs work in databases like Oracle. So in a way Event Sourcing underpins the technology that we've used for decades.
 
@@ -68,14 +68,30 @@ The benefits of Event Sourcing are as follows:
 3. Event Sourcing inherently creates an audit log of mutations in the form of events that are persisted in the event store.
 4. It's possible to "time travel" backwards and forwards in the event stream to reconstruct state at an earlier point in time.
 5. Applications built with Event Sourcing can be assembled from components that are loosely-coupled (being coupled only by the pure data that logically connects them) rather than any particular API or transport mechanism. This means that it's much easier to build applications based upon microservices and serverless platforms, bringing cost-benefits and flexible scalability.
+6. Event sourcing is a natural fit for concurrent and parallel processing using multi-core CPU architectures.
+
+## Event Sourcing and scalability
+
+Event data structures are very easy to pass between loosely coupled components running on separate threads within a modern multi-core computer. This means that Event Sourcing is a natural fit for parallel processing on massively multi-core CPU machines.
+
+Since the physical limits have just about been reached for improving the speed of an individual CPU core, the only viable alternative to improve utilitisation and performance of computers is to massively expand the number of CPU cores themselves and improve upon the hardware built into the CPU itself that is used to inteconnect them. Because of this, CPUs are now being produced with many more than the 2 or 4 cores that have been available to date. 
+
+Intel's Core i9 CPUs with 18 cores (and 36 threads) are already available at the time of writing. AMD has announced CPUs with 32 cores and 64 threads in its Threadripper 2 CPU line. It's not difficult to foresee 64, 128, 256, 512 or 1024 core CPUs being produced over the next decade, with coresponding increases in the number of threads available for concurrent and parallel processing. 
+
+Exploiting all of this power with conventional programming techniques will be difficult and expensive, however. Conventional programming languages (and the software developers that work with these) are not cut out for productive development of massively parallel processing. Indeed using these legacy programming languages its difficult to visualise how such computer programs would work. And if its difficult to visualise then it's going to be expensive to maintain, because people will struggle to understand what's going on. 
+
 
 ## RADiQL QuickStep and Ultra Agile
 
-The RADiQL QuickStep Framework represents a revolutionary step forward in Agile development capability that we call Ultra Agile (UA). It builds upon the work of Ivar Jacobson, Alistair Cockburn, Robert C Martin, Paul Morrison and Henri Bergius.
+The RADiQL QuickStep Framework represents a revolutionary step forward in Agile development capability that we call Ultra Agile (UA). It builds upon the work of Ivar Jacobson, Alistair Cockburn, Robert C Martin, Paul Morrison, Henri Bergius and Eric Evans.
 
 QuickSteps are used to enable ultra-agile development using visual tools and "lowcode" or "nocode" techniques. Using RADiQL QuickSteps, a business analyst, entrepreneur or application designer assembles an application as a network of User Stories rather than classes, functions, libraries and microservices. QuickSteps can be thought of as re-usable User Story lightweight nanoservices that can easily be combined, composed and chained together into a one or more data flows.
 
-QuickSteps can be deployed into web browsers, monolithic applications, microservices, serverless infrastructure or a combinaton thereof.
+RADiQL QuickStep has been created specifically to deal with the complexity of massively parallel processing and to fully exploit the computing power of next-generation multi-core CPU architectures. And to do so using Ultra Agile RAD and JAD nocode/lowcode techniques that permit organisations to exploit the power of these new platforms to achieve successful business outcomes. The business-centric nature of QuickSteps (since these actually implement and correspond to business-oriented User Stories and Use Cases) means that it's possible to understand and perform the necessary steps for Digital Transformation of an organisation in record time. And by this we mean not just the underpinning technology but the oranisational changes that need to come about to fully exploit the symbiosis beween that technology and a more effective organisation that this technology serves. That's what Digital Transformation is all about. 
+
+RADiQL Composer and RADiQL QuickStep technologies help organsations to explore and research the possibilities through prototyping (at minimal risk and maximum speed). But at the same time RADiQL Composer using RADiQL QuickSteps can be used to implement the technology within an organisation to enable and empower Digital Transformation.
+
+RADiQL is an Ultra Agile toolset because it brings **D**on't **R**epeat **Y**ourself (DRY) to a new level. QuickSteps are reusuable and relevant User Story or Use Case implementation that are wired together (much like your hifi system or your TV and DVD player and amplifier or any other sort of electronic components) to build "business-centric circuits". These are analogous to electronic circuits except that instead of electronic components, there are User Stories and Use Cases. Since many User Stories are common to many organisations (User Management, Purchase Orders, Inventories, Sales, Invoices, Receipts, Sorting, Mailing, Deliveries, CRM, Shopping Carts, Tax, Calculations, Social Security, Authentication, Authorisation, Analytics, Fraud Detection, Customer Service, Geolocation, Image Processing, Monitoring, Telemetry, etc.), generic User Stories can be customised, parameterised, tailored, assembled, and packaged as QuickStep components to provide the bulk of a the business needs or a particular organisation **without** involvment of a software development team.
 
 ## Design principles
 
@@ -83,6 +99,7 @@ The design principles of the QuickStep Framework are that:
 
 - QuickSteps encapsulate simple User Stories. There is a one to one correspondence. 
 - Quickstep component inputs and outputs are defined as streamable data structures (Information Packets).
+- Information Packets contain Events which are used for Event Sourcing.
 - User interface technologies are treated as plugins. React and React Native are the default user interface technologies but are by no means the only technologies that will be supported. User interface frameworks may be substituted or combined as new frameworks and technologies are introduced.
 - Databases and data stores are treated as plugins. There is no direct dependence on SQL and NoSQL databases. User Stories are implemented entirely as QuickStep components or combinations therefore and there is therefore no need to use supporting features of the database other than those provided by boundary interface components implemented as QuickStep components.
 - QuickSteps are reusable. QuickSteps can be reused many times within an application or across multiple applications.
