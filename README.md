@@ -115,7 +115,7 @@ RADiQL Composer and RADiQL QuickStep technologies help organsations to explore a
 
 RADiQL is an Ultra Agile toolset because it brings **D**on't **R**epeat **Y**ourself (DRY) to a new level. QuickSteps are reusuable and relevant User Story or Use Case implementation that are wired together (much like your hifi system or your TV and DVD player and amplifier or any other sort of electronic components) to build "business-centric circuits". These are analogous to electronic circuits except that instead of electronic components, there are User Stories and Use Cases. Since many User Stories are common to many organisations (User Management, Purchase Orders, Inventories, Sales, Invoices, Receipts, Sorting, Mailing, Deliveries, CRM, Shopping Carts, Tax, Calculations, Social Security, Authentication, Authorisation, Analytics, Fraud Detection, Customer Service, Geolocation, Image Processing, Monitoring, Telemetry, etc.), generic User Stories can be customised, parameterised, tailored, assembled, and packaged as QuickStep components to provide the bulk of a the business needs or a particular organisation **without** involvment of a software development team.
 
-## Design principles
+# Design principles
 
 The design principles of the QuickStep Framework are that:
 
