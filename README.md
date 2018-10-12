@@ -8,7 +8,7 @@ An Ultra Agile framework to shorten the path from User Stories to working softwa
    * [Prior art: RAD and JAD tooling](#prior-art-rad-and-jad-tooling)
    * [Focus on productivity: User Stories as components](#focus-on-productivity-user-stories-as-components)
    * [User Stories and Use Cases](#user-stories-and-use-cases)
-   * [User Stories, Use Cases and Events] (#user-stories-use-cases-and-events)
+   * [User Stories, Use Cases and Events](#user-stories-use-cases-and-events)
    * [RADiQL QuickStep and Ultra Agile](#radiql-quickstep-and-ultra-agile)
    * [Design principles](#design-principles)
 3. [Motivation for RADiQL QuickStep](#motivation-for-radiql-quickstep)
