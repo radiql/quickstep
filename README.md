@@ -64,18 +64,22 @@ RADiQL QuickSteps are concrete implementations of User Stories that can be linke
 
 User Stories are created and implemented by development teams using a traditional Agile development methodology. At this point in time, most developers, technical managers and business analysts are fully conversant with the now very familiar concept of User Stories. In this day and age, the development of computer applications is now almost always planned, tracked and controlled using User Stories and supporting tools such as Atlassian JIRA.
 
-User Stories are, in effect, lightweight Use Cases. The main difference between the two is that 
+User Stories are, in effect, lightweight Use Cases that serve as initial outlines of the desired behaviour. Use Cases describe the successul outcome of a story as well as the altenative means of reaching that outcome and the various failure modes that may occur. The conceptual difference between the two is that: 
 
 1. Use Cases are usually designed in detail up front with inputs, outputs and various application flows (primary success flow and alternative and error flows) expressed as a series of related steps that need to be implemented.
 2. User Stories are usually expressed as a single sentence outline specification of behaviour and subsequently elaborated by creating new User Stories and sub-tasks that need to be implemented one by one.
 
 ## User Stories, Use Cases and events
 
-It's important to understand that each step in a User Story or Use Case is, in itself, an event. The sequence of these events produce a change in state of some sort, either in terms of what's shown on a display screen, the data that records the outcome of this sequence of events, a physical change to the world that's been completed or that is on-going or some combination of these.
+It's important to understand that each step in a User Story or Use Case is, in itself, an event. The sequence of these events produce a change in state of some sort, either in terms of what's shown on a display screen, the data stored in a database, a physical change to the world that's been either been completed or that is still ongoing on-going or some combination of these.
 
-By describing steps, User Stories and Use Cases document how these changes of state occur through a sequence of events. Viewed in this lights, User Stories and Use Cases are descriptions of event processors. Each event can be described in natural language but can also be modelled as a data structure. User Stories and Use Cases can be though of as being linked together by a stream of event data structures passing between them. RADiQL QuickSteps that implement User Stories, accept streams of event data structures as inputs, process these events and optionally create or pass through data structures as their outputs.
+By describing themselves in steps, User Stories and Use Cases document how these changes of state occur through a sequence of events. Viewed in this lights, User Stories and Use Cases are descriptions of event processors. Each event can be described in natural language but can also be modelled as a data structure. User Stories and Use Cases can be thought of as being linked together by a stream of event data structures passing between them. RADiQL QuickSteps that implement User Stories:
 
-QuickStep components can have multiple inputs and multiple output and process multiple different types of event data structures. And this is natural because this process is exactly what Use Cases and User Stories really describe. 
+1. accept streams of event data structures as inputs
+2. process events and the associated data from these inputs 
+3. optionally create or pass through event data structures to their outputs
+
+QuickStep components can have multiple inputs and multiple outputs. QuickStep components can process multiple different types of event data structures. And this is natural because this process is exactly what Use Cases and User Stories really describe. 
 
 ## Event Sourcing for data
 
