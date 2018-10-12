@@ -30,6 +30,8 @@ In its day, Delphi was (and still is) an outstanding tool, though a very expensi
 
 At the time of writing, even after a nearly two decades of cheap or free software development tooling, Delphi still retails for over $5,000 per developer seat in its more expensive version and remains one of the best kept secrets in the software development world. This shows that even at that price point, really good tools still have a market, albeit more limited due to the steep pricing. Users of Delphi, however, still appear to belive that there a competitive advantage to be had from using an expensive niche product of this sort.
 
+Please note that that we've cited Delphi and the VCL as tools that possesses many of the qualities and characteristics that we're striving for with RADiQL and and RADiQL Quickstep. There have been many innovate tools over the years (such as Microsoft VisualBasic, IBM's VisualAge and many more) but we've described Delphi here because in our view it was more successful in combinining the characteristics and qualities that the RADiQL toolset is built upon. Delphi has been one of our inspirations, though not the only one. And RADiQL takes a very different and far more complete approach to componentry, application assembly, deployment and maintenance. 
+
 ## Focus on productivity: User Stories as components
 
 Though very different to Delphi, RADiQL is inspired by Delphi's focus on developer productivity and producing high quality results virtually instantly, with the design-time environment able to work with live data from real APIs even before the compile, build and deployment steps.
@@ -44,6 +46,12 @@ User Stories are, in effect, lightweight Use Cases. The main difference between 
 
 1. Use Cases are usually designed in detail up front with inputs, outputs and various application flows (primary success flow and alternative and error flows) expressed as a series of related steps that need to be implemented.
 2. User Stories are usually expressed as a single sentence outline specification of behaviour and subsequently elaborated by creating new User Stories and sub-tasks that need to be implemented one by one.
+
+## User Stories, Use Cases and events
+
+It's important to understand that each step in a User Story or Use Case is, in itself, an event. The sequence of these events produce a change in state of some sort, either in terms of what's shown on a display screen, the data that records the outcome of this sequence of events, a physical change to the world that's been completed or that is on-going or some combination of these.
+
+By describing steps, User Stories and Use Cases document how these changes of state occur through a sequence of events. Viewed in this lights, User Stories and Use Cases are descriptions of event processors.
 
 ## RADiQL QuickStep and Ultra Agile
 
