@@ -42,7 +42,7 @@ This approach has many drawbacks. Click on the links below for more details.
 
 # About RADiQL QuickStep
 
-RADiQL QuickSteps are designed to be composed using the principles of Flow Based Programming (FBE) and are a key elements in designing and building RADiQL applications. QuickSteps are designed according to Clean Architecture principles, the most important of which being that each QuickStep encapsulates and implements a re-usuable and re-composable User Story. Key elements of Hexagonal Architecture have also been incorporated, namely that application logic is pure and separate from persistence mechanisms or user interace technology and that ports and adapters are a fundamental characteristic of each QuickStep component. Finally, Event Sourcing is used as a technique for passing data between QuickStep components and for persistence of data.
+RADiQL QuickSteps are designed to be composed using the principles of Flow Based Programming (FBP) and are a key elements in designing and building RADiQL applications. QuickSteps are designed according to Clean Architecture principles, the most important of which being that each QuickStep encapsulates and implements a re-usuable and re-composable User Story. Key elements of Hexagonal Architecture have also been incorporated, namely that application logic is pure and separate from persistence mechanisms or user interace technology and that ports and adapters are a fundamental characteristic of each QuickStep component. Finally, Event Sourcing is used as a technique for passing data between QuickStep components and for persistence of data.
 
 ## Prior art: RAD and JAD tooling
 
