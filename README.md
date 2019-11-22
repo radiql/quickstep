@@ -73,7 +73,7 @@ User Stories are, in effect, lightweight Use Cases that serve as initial outline
 
 It's important to understand that each step in a User Story or Use Case is, in itself, an event. The sequence of these events produce a change in state of some sort, either in terms of what's shown on a display screen, the data stored in a database, a physical change to the world that's been either been completed or that is still ongoing on-going or some combination of these.
 
-By describing themselves in steps, User Stories and Use Cases document how these changes of state occur through a sequence of events. Viewed in this lights, User Stories and Use Cases are descriptions of event processors. Each event can be described in natural language but can also be modelled as a data structure. User Stories and Use Cases can be thought of as being linked together by a stream of event data structures passing between them. RADiQL QuickSteps that implement User Stories:
+By describing themselves in steps, User Stories and Use Cases document how these changes of state occur through a sequence of events. Viewed in this light, User Stories and Use Cases are descriptions of event processors. Each event can be described in natural language but can also be modelled as a data structure. User Stories and Use Cases can be thought of as being linked together by a stream of event data structures passing between them. RADiQL QuickSteps that implement User Stories:
 
 1. accept streams of event data structures as inputs
 2. process events and the associated data from these inputs 
